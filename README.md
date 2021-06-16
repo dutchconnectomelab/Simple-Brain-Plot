@@ -30,9 +30,10 @@ mapped
 
 `plotBrain(regions, values, cm, ...)` - plots surfaces with
 optional arguments:
-'limits',    array with [xmin xmax]
+```
+'limits'     array with [xmin xmax]
              - default: [min(values) max(values)]
-'viewer',    scalar with 1/true (show) or 0/false (no show)
+'viewer'     scalar with 1/true (show) or 0/false (no show)
              - default: 1 (show)
 'savePath'   path to save file 'savePath'_lausanne120_combined.svg
              - default: temporary dir, deleted afterwards.
@@ -40,10 +41,18 @@ optional arguments:
              smaller scalings show small white lines
              - default: '0.1' (10%)
 'atlas'      chose which atlas to use
-             ('aparc', 'aparc_aseg',
-              'lausanne120', 'lausanne120_aseg',
-              'lausanne250' or 'wbb47')
+             'aparc'            - Desikan-Killiany atlas
+             'aparc_aseg'       - Desikan-Killiany atlas + subcortical ASEG
+                                  segmentation
+             'lausanne120'      - 120 regions Cammoun sub-parcellation of
+                                  the Desikan-Killiany atlas
+             'lausanne120_aseg' - 120 regions Cammoun sub-parcellation +
+                                  subcortical ASEG segmentation
+             'lausanne250'      - 250 regions Cammoun sub-parcellation
+             'wbb47'            - Cobined Walker-von Bonin and Bailey
+                                  parcellation atlas of the macaque
              - default: 'lausanne120'
+```
 
 ## Example
 First create the colormap used (one can also use the standard MATLAB colormap). This one is based on the [cbrewer YlGnBu-colormap](https://mathworks.com/matlabcentral/fileexchange/34087)
