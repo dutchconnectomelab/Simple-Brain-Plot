@@ -22,27 +22,33 @@ This tool can be used to visualize the brain for the following atlases:
 ```
 addpath('~/MATLAB/simple-brain-plot')
 ```
+3. You are ready to use `plotBrain`!
+
+Note: When you use the function for the first time, the figure viewer in MATLAB may display "Unable to open file" or "File not found". This error only appears when you use the function for the first time and will be resolved when you try to run it a second time.
 
 ## Usage
 
-`plotBrain(regions, values, cm)` - regions describes a list (Nx1) of
-regions to color. Values is an vector with the values associated with
-each region (Nx1). Variable cm is the colormap (Mx3) to which values are
-mapped
+`plotBrain(regions, values, cm)` creates brain plot with regions having 
+colors as specified by the `regions` and `values` vectors with a colormap 
+defined by the matrix `cm`. Colormap `cm` can have any number of rows, but 
+must have exactly 3 columns.
 
-`plotBrain(regions, values, cm, ...)` - plots surfaces with
+`plotBrain(regions, values, cm, ...)` creates brain plots with 
 optional arguments:
 ```
-'limits'     array with [xmin xmax]
+'limits'     Two element vector [cmin cmax]. cmin and cmax are assigned
+             to the first and last color in the colormap.
              - default: [min(values) max(values)]
-'viewer'     scalar with 1/true (show) or 0/false (no show)
-             - default: 1 (show)
-'savePath'   path to save file 'savePath'_lausanne120_combined.svg
+'viewer'     A logical indicating whether the created figure will be opened 
+             in web viewer.
+             - default: true
+'savePath'   A char array with location and first part of the output file name.
+             File name will be: ['savePath'_ATLASNAME.svg]
              - default: temporary dir, deleted afterwards.
-'scaling'    set scaling of image. Original scaling is very large, but
-             smaller scalings show small white lines
+'scaling'    A scalar specifying scaling of image. Original scaling is very 
+             large, but smaller scalings show small white lines
              - default: '0.1' (10%)
-'atlas'      chose which atlas to use
+'atlas'      Chose which atlas to use
              'aparc'            - Desikan-Killiany atlas
              'aparc_aseg'       - Desikan-Killiany atlas + subcortical ASEG
                                   segmentation
