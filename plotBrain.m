@@ -8,15 +8,16 @@ function plotBrain(regions, values, cm, varargin)
 %
 % PLOTBRAIN(REGIONS, VALUES, CM, ...) creates brain plots with additional
 % optional arguments:
-% 'limits',    two element vector [cmin cmax]. cmin and cmax are assigned
+% 'limits'     Two element vector [cmin cmax]. cmin and cmax are assigned
 %              to the first and last color in the colormap.
-%              - default: [min(VALUES) max(VALUES)]
-% 'viewer',    Logical whether figure is opened in web viewer.
+%              - default: [min(values) max(values)]
+% 'viewer'     A logical indicating whether the created figure will be opened 
+%              in web viewer.
 %              - default: true
-% 'savePath'   Char with location and first part of file name. Final file 
-%              name is: ['savePath'_ATLASNAME.svg]
+% 'savePath'   A char array with location and first part of the output file name.
+%              File name will be: ['savePath'_ATLASNAME.svg]
 %              - default: temporary dir, deleted afterwards.
-% 'scaling'    Scalar specifying scaling of image. Original scaling is very 
+% 'scaling'    A scalar specifying scaling of image. Original scaling is very 
 %              large, but smaller scalings show small white lines
 %              - default: '0.1' (10%)
 % 'atlas'      Atlas that is being used:
