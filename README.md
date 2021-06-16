@@ -4,6 +4,8 @@ brainPlot is a MATLAB function to create simple line-art brain plots.
 
 ![Figure with all atlases](atlases_overview.png)
 
+[Atlases available](#atlases-available), [Installation](#installation), [Usage](#usage), [Examples](#examples), [Notes](#notes), [References](#references)
+
 ## Atlases available
 
 This tool can be used to visualize the brain for the following atlases:
@@ -62,7 +64,7 @@ optional arguments:
              - default: 'lausanne120'
 ```
 
-## Example
+## Examples
 First create the colormap used (one can also use the standard MATLAB colormap). This one is based on the [cbrewer YlGnBu-colormap](https://mathworks.com/matlabcentral/fileexchange/34087)
 ```
 cm = [0.8431    0.1882    0.1529; ...
