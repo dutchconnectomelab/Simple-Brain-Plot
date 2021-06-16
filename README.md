@@ -10,16 +10,16 @@ This tool can be used to visualize the brain for the following atlases:
 * ‘Desikan-Killiany’ atlas as present in FreeSurfer (with or without subcortical regions from the ASEG parcellation) [1].
 * 120 regions Cammoun sub-parcellation of the Desikan-Killiany atlas (with or without subcortical regions from the ASEG parcellation) [2].
 * 250 regions Cammoun sub-parcellation of the Desikan-Killiany atlas [2].
-* Combined Walker-von Bonin and Bailey (WBB47) parcellation atlas of the macaque [3][4][5][6]
+* Combined Walker-von Bonin and Bailey (WBB47) parcellation atlas of the macaque [3][4][5][6].
 
 
 ## Installation
 
 1. Download/clone this repository and save it in a directory, e.g. `~/MATLAB`
 2. Locate the simple-brain-plot directory and add this directory to your MATLAB path using the addpath command:
-
-    addpath('~/MATLAB/simple-brain-plot')
-
+```
+addpath('~/MATLAB/simple-brain-plot')
+```
 
 ## Usage
 
