@@ -152,7 +152,7 @@ plotBrain(regionDescriptions.aparc_aseg, ...
 
 [3] Lianne H. Scholtens, Ruben Schmidt, Marcel A. de Reus, Martijn P. van den Heuvel. Linking Macroscale Graph Analytical Organization to Microscale Neuroarchitectonics in the Macaque Connectome. Journal of Neuroscience 3 September 2014, 34 (36) 12192-12205; URL: https://www.jneurosci.org/content/34/36/12192.short DOI: 10.1523/JNEUROSCI.0752-14.2014
 
-[4] Stephan KE, Hilgetag CC, Burns GA, O'Neill MA, Young MP, Kötter R. Computational analysis of functional connectivity between areas of primate cerebral cortex. Philos Trans R Soc Lond B Biol Sci 355:111–126, 2000. doi:10.1098/rstb.2000.0552, pmid:10703047
+[4] Stephan KE, Hilgetag CC, Burns GA, O'Neill MA, Young MP, Kötter R. Computational analysis of functional connectivity between areas of primate cerebral cortex. Philos Trans R Soc Lond B Biol Sci 355:111–126, 2000. URL: https://royalsocietypublishing.org/doi/abs/10.1098/rstb.2000.0552 doi:10.1098/rstb.2000.0552, pmid:10703047
 
 [5] von Bonin G, Bailey P. The neocortex of Macaca mulatta. 1947. University of Illinois, Urbana, IL.
 
