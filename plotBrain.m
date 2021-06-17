@@ -29,7 +29,7 @@ function plotBrain(regions, values, cm, varargin)
 %              'lausanne120_aseg' - 120 regions Cammoun sub-parcellation +
 %                                   subcortical ASEG segmentation
 %              'lausanne250'      - 250 regions Cammoun sub-parcellation
-%              'wbb47'            - Combined Walker-von Bonin and Bailey
+%              'wbb47'            - 39 regions combined Walker-von Bonin and Bailey
 %                                   parcellation atlas of the macaque
 %              - default: 'lausanne120'
 
