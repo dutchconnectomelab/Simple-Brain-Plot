@@ -59,7 +59,7 @@ optional arguments:
              'lausanne120_aseg' - 120 regions Cammoun sub-parcellation +
                                   subcortical ASEG segmentation
              'lausanne250'      - 250 regions Cammoun sub-parcellation
-             'wbb47'            - Cobined Walker-von Bonin and Bailey
+             'wbb47'            - Combined 39 region Walker-von Bonin and Bailey
                                   parcellation atlas of the macaque
              - default: 'lausanne120'
 ```
