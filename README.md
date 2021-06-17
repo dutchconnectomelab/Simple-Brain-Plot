@@ -14,7 +14,7 @@ This tool can be used to visualize the brain areas in the following atlases:
 * 120 regions Cammoun sub-parcellation of the Desikan-Killiany cortical atlas [2].
 * 120 regions Cammoun sub-parcellation of the Desikan-Killiany cortical atlas with ASEG subcortical regions [2].
 * 250 regions Cammoun sub-parcellation of the Desikan-Killiany atlas [2].
-* Combined 39 region Walker-von Bonin and Bailey (WBB47) parcellation atlas of the macaque [3][4][5][6].
+* 39 regions combined Walker-von Bonin and Bailey (WBB47) parcellation atlas of the macaque [3][4][5][6].
 
 
 ## Installation
@@ -59,7 +59,7 @@ optional arguments:
              'lausanne120_aseg' - 120 regions Cammoun sub-parcellation +
                                   subcortical ASEG segmentation
              'lausanne250'      - 250 regions Cammoun sub-parcellation
-             'wbb47'            - Combined 39 region Walker-von Bonin and Bailey
+             'wbb47'            - 39 regions combined Walker-von Bonin and Bailey
                                   parcellation atlas of the macaque
              - default: 'lausanne120'
 ```
