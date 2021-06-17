@@ -65,7 +65,7 @@ optional arguments:
 ```
 
 ## Examples
-First create the colormap used (one can also use the standard MATLAB colormap). This one is based on the [cbrewer YlGnBu-colormap](https://mathworks.com/matlabcentral/fileexchange/34087)
+First create the colormap you would like to use (one can also use the standard MATLAB colormap). Here we show an example based on the [cbrewer YlGnBu-colormap](https://mathworks.com/matlabcentral/fileexchange/34087)
 ```
 cm = [0.8431    0.1882    0.1529; ...
     0.9569    0.4275    0.2627; ...
