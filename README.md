@@ -8,7 +8,7 @@ brainPlot is a MATLAB function to create simple line-art brain plots.
 
 ## Atlases available
 
-This tool can be used to visualize the brain for the following atlases:
+This tool can be used to visualize the brain areas in the following atlases:
 * ‘Desikan-Killiany’ aparc cortical atlas as present in FreeSurfer [1].
 * ‘Desikan-Killiany’ aparc+aseg combined cortical and subcortical atlas as present in FreeSurfer [1].
 * 120 regions Cammoun sub-parcellation of the Desikan-Killiany cortical atlas [2].
