@@ -65,7 +65,8 @@ optional arguments:
 ```
 
 ## Examples
-First create the colormap you would like to use (one can also use the standard MATLAB colormap). Here we show an example based on the [cbrewer YlGnBu-colormap](https://mathworks.com/matlabcentral/fileexchange/34087)
+### Preparation
+First create the colormap you would like to use (one can also use the standard MATLAB colormap). Here we show an example based on the [cbrewer YlGnBu-colormap](https://mathworks.com/matlabcentral/fileexchange/34087).
 ```
 cm = [0.8431    0.1882    0.1529; ...
     0.9569    0.4275    0.2627; ...
@@ -79,18 +80,20 @@ cm = [0.8431    0.1882    0.1529; ...
 cm = interp1(cm, 1:0.01:size(cm,1));
 ```
 
-Make directory with example surfaces
+Make a folder called "figures" in which the generated figures can be saved.
 ```
-[~, ~] = mkdir('examples');
+[~, ~] = mkdir('figures');
 ```
 
-Load region names for all atlases
+Load the names of the brain regions for all atlases.
 ```
 load('regionDescriptions.mat');
 ```
 
 ### Visualize atlases
-APARC + aseg atlas
+In this example, brain plots are colored using random values. Replace the random values function ``randn(size(regionDescriptions.ATLAS))``, with your own variable to plot your specific values in the brain figure.
+
+##### APARC + aseg atlas
 ```
 plotBrain(regionDescriptions.aparc_aseg, ...
     randn(size(regionDescriptions.aparc_aseg)), cm, ...
@@ -98,7 +101,7 @@ plotBrain(regionDescriptions.aparc_aseg, ...
     'savePath', 'examples/figure');
 ```
 
-APARC atlas
+##### APARC atlas
 ```
 plotBrain(regionDescriptions.aparc_aseg, ...
     randn(size(regionDescriptions.aparc_aseg)), cm, ...
@@ -106,7 +109,7 @@ plotBrain(regionDescriptions.aparc_aseg, ...
     'savePath', 'examples/figure');
 ```
 
-Lausanne120 + aseg atlas
+##### Lausanne120 + aseg atlas
 ```
 plotBrain(regionDescriptions.lausanne120_aseg, ...
     randn(size(regionDescriptions.lausanne120_aseg)), cm, ...
@@ -114,7 +117,7 @@ plotBrain(regionDescriptions.lausanne120_aseg, ...
     'savePath', 'examples/figure');
 ```
 
-Lausanne120 atlas
+##### Lausanne120 atlas
 ```
 plotBrain(regionDescriptions.lausanne120_aseg, ...
     randn(size(regionDescriptions.lausanne120_aseg)), cm, ...
@@ -122,7 +125,7 @@ plotBrain(regionDescriptions.lausanne120_aseg, ...
     'savePath', 'examples/figure');
 ```
 
-Lausanne250 atlas
+##### Lausanne250 atlas
 ```
 plotBrain(regionDescriptions.lausanne250, ...
     randn(size(regionDescriptions.lausanne250)), cm, ...
@@ -130,7 +133,7 @@ plotBrain(regionDescriptions.lausanne250, ...
     'savePath', 'examples/figure');
 ```
 
-WBB47 atlas
+##### WBB47 atlas
 ```
 plotBrain(regionDescriptions.wbb47, ...
     randn(size(regionDescriptions.wbb47)), cm, ...
@@ -139,7 +142,7 @@ plotBrain(regionDescriptions.wbb47, ...
 ```
 
 ### Advanced
-Let the color axis center around 0 using the `limits` option.
+Center the color axis around 0 using the `limits` option:
 
 ```
 values = randn(size(regionDescriptions.aparc_aseg));
