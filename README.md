@@ -4,7 +4,9 @@ brainPlot is a MATLAB function to create simple line-art brain plots.
 
 ![Figure with all atlases](atlases_overview.png)
 
-[Atlases available](#atlases-available), [Installation](#installation), [Usage](#usage), [Examples](#examples), [Notes](#notes), [References](#references)
+[![DOI](https://zenodo.org/badge/377448069.svg)](https://zenodo.org/badge/latestdoi/377448069)
+
+[Atlases available](#atlases-available), [Installation](#installation), [Usage](#usage), [Examples](#examples), [References](#references), [Attribution](#attribution)
 
 ## Atlases available
 
@@ -154,8 +156,6 @@ plotBrain(regionDescriptions.aparc_aseg, ...
 
 ![Figure with advanced example](examples/example_advanced.png)
 
-## Notes
-
 ## References
 [1] Rahul S. Desikan, Florent Ségonne, Bruce Fischl, Brian T. Quinn, Bradford C. Dickerson, Deborah Blacker, Randy L. Buckner, Anders M. Dale, R. Paul Maguire, Bradley T. Hyman, Marilyn S. Albert, and Ronald J. Killiany. An automated labeling system for subdividing the human cerebral cortex on mri scans into gyral based regions of interest. NeuroImage, 31(3):968–80, 2006. URL: http://www.sciencedirect.com/science/article/pii/S1053811906000437, doi:10.1016/j.neuroimage.2006.01.021.
 
@@ -168,4 +168,8 @@ plotBrain(regionDescriptions.aparc_aseg, ...
 [5] von Bonin G, Bailey P. The neocortex of Macaca mulatta. 1947. University of Illinois, Urbana, IL.
 
 [6] Walker EA. A cytoarchitectural study of the prefrontal area of the macaque monkey. J Comp Neurol 73:59–86, 1940. doi:10.1002/cne.900730106
+
+## Attribution
+If you find this code useful in your research, please cite as: *Scholtens, Lianne H, de Lange, Siemon C, and van den Heuvel, Martijn P. 2021. “Simple Brain Plot”. Zenodo. https://doi.org/10.5281/zenodo.5346593.*
+
 
